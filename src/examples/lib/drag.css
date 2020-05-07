@@ -1,0 +1,48 @@
+.draggable--bar {
+  transition: background-color 1s ease-out;
+  padding: 10px 0;
+}
+
+.draggable--bar.dragover .inner {
+  transition: height 0.3s ease;
+  margin: 10px 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  user-select: none;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: grey 1px 2px 3px;
+}
+
+.draggable {
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.draggable.dragging {
+  opacity: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.card img {
+  width: 72px;
+  height: 72px;
+  border-radius: 36px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card {
+  border: 1px solid #eee;
+}
+
+.card .text {
+  margin-left: 20px;
+}
